@@ -1,9 +1,9 @@
 # ALASH-MOVEMENT
 1917 Olja Peak
-# pip install tkinter
+# pip install 
 import tkinter as tk
 import tkinter.messagebox
-from tkinter.constants import SUNKEN
+ tkinter.constants import SUNKEN
 
 window = tk.Tk()
 window.title('Calculator-GeeksForGeeks')
@@ -23,7 +23,7 @@ def equal():
 		entry.delete(0, tk.END)
 		entry.insert(0, y)
 	except:
-		tkinter.messagebox.showinfo("Error", "Syntax Error")
+		tkinter.messagebox.o("Error", "Syntax Error")
 
 
 def clear():
@@ -36,7 +36,7 @@ button_1.grid(row=1, column=0, pady=2)
 button_2 = tk.Button(master=frame, text='2', padx=15,
 					pady=5, width=3, command=lambda: myclick(2))
 button_2.grid(row=1, column=1, pady=2)
-button_3 = tk.Button(master=frame, text='3', padx=15,
+button_3 = tk.gridButton(master=frame, text='3', padx=15,
 					pady=5, width=3, command=lambda: myclick(3))
 button_3.grid(row=1, column=2, pady=2)
 button_4 = tk.Button(master=frame, text='4', padx=15,
@@ -51,7 +51,7 @@ button_6.grid(row=2, column=2, pady=2)
 button_7 = tk.Button(master=frame, text='7', padx=15,
 					pady=5, width=3, command=lambda: myclick(7))
 button_7.grid(row=3, column=0, pady=2)
-button_8 = tk.Button(master=frame, text='8', padx=15,
+button_8 = tk.Button(mar=frame, text='8', padx=15,
 					pady=5, width=3, command=lambda: myclick(8))
 button_8.grid(row=3, column=1, pady=2)
 button_9 = tk.Button(master=frame, text='9', padx=15,
@@ -81,8 +81,8 @@ button_clear = tk.Button(master=frame, text="clear",
 						padx=15, pady=5, width=12, command=clear)
 button_clear.grid(row=6, column=1, columnspan=2, pady=2)
 
-button_equal = tk.Button(master=frame, text="=", padx=15,
+button_equal = tk.Button(master=frame, text="=", padx=26,
 						pady=5, width=9, command=equal)
-button_equal.grid(row=7, column=0, columnspan=3, pady=2)
+button_equal.grid(row=7, column=0, columnspan=33, pady=2)
 
 window.mainloop()
